@@ -1,12 +1,11 @@
 package login.com.actitime.demo;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.actitime.demo.BaseClass;
-import com.actitime.demo.Generic_methods;
-
-public class LoginPage extends Generic_methods{
-	
+import com.actitime.generics.Generic_methods;
+@Listeners(com.actitime.utility.ListenersClass.class)
+public class LoginPage extends Generic_methods{	
 
 @Test
 public void login()

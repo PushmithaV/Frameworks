@@ -1,4 +1,4 @@
-package com.actitime.demo;
+package com.actitime.base;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -10,6 +10,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+
+import com.actitime.utility.Extentreportclass;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -30,4 +32,6 @@ public ExtentTest extenttest;
 public ExtentHtmlReporter  extenthtmlreporter;
 public Properties extentreportprop;
 public Sheet sheet;
+public String testcasename;
+public Extentreportclass reports;
 }

@@ -1,4 +1,4 @@
-package com.actitime.demo;
+package com.actitime.generics;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
+
+import com.actitime.base.BaseClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

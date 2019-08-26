@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-26T05:43:08Z" name="Default suite" finished-at="2019-08-26T05:43:25Z" duration-ms="17544">
+  <suite started-at="2019-08-26T06:42:37Z" name="Default suite" finished-at="2019-08-26T06:43:02Z" duration-ms="24932">
     <groups>
     </groups>
-    <test started-at="2019-08-26T05:43:08Z" name="Default test" finished-at="2019-08-26T05:43:25Z" duration-ms="17544">
+    <test started-at="2019-08-26T06:42:37Z" name="Default test" finished-at="2019-08-26T06:43:02Z" duration-ms="24932">
       <class name="login.com.actitime.demo.LoginPage">
-        <test-method is-config="true" signature="init()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T05:43:08Z" name="init" finished-at="2019-08-26T05:43:08Z" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:37Z" name="init" finished-at="2019-08-26T06:42:37Z" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T05:43:08Z" name="launchbrowser" finished-at="2019-08-26T05:43:24Z" duration-ms="16687" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:37Z" name="launchbrowser" finished-at="2019-08-26T06:42:58Z" duration-ms="21722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="login()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T05:43:24Z" name="login" finished-at="2019-08-26T05:43:25Z" duration-ms="326" status="PASS">
+        <test-method signature="login()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:58Z" name="login" finished-at="2019-08-26T06:42:59Z" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T05:43:25Z" name="closeApp" finished-at="2019-08-26T05:43:25Z" duration-ms="476" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:59Z" name="closeApp" finished-at="2019-08-26T06:43:02Z" duration-ms="2595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

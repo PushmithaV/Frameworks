@@ -1,6 +1,8 @@
-package com.actitime.demo;
+package com.actitime.generics;
 
 import org.openqa.selenium.interactions.Actions;
+
+import com.actitime.base.BaseClass;
 
 public class Actionsclass extends BaseClass{
 
