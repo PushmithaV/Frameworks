@@ -27,11 +27,9 @@ public JavascriptExecutor jexecuter;
 public FileInputStream file;
 public Properties excelprop;
 public Workbook wbook;
-public ExtentReports extentreports;
-public ExtentTest extenttest;
-public ExtentHtmlReporter  extenthtmlreporter;
+
 public Properties extentreportprop;
 public Sheet sheet;
 public String testcasename;
-public Extentreportclass reports;
+
 }

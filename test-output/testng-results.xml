@@ -2,24 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-26T06:42:37Z" name="Default suite" finished-at="2019-08-26T06:43:02Z" duration-ms="24932">
+  <suite started-at="2019-08-26T10:55:30Z" name="Default suite" finished-at="2019-08-26T10:56:07Z" duration-ms="36811">
     <groups>
     </groups>
-    <test started-at="2019-08-26T06:42:37Z" name="Default test" finished-at="2019-08-26T06:43:02Z" duration-ms="24932">
+    <test started-at="2019-08-26T10:55:30Z" name="Default test" finished-at="2019-08-26T10:56:07Z" duration-ms="36811">
       <class name="login.com.actitime.demo.LoginPage">
-        <test-method is-config="true" signature="init()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:37Z" name="init" finished-at="2019-08-26T06:42:37Z" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:login.com.actitime.demo.LoginPage@223f3642]" started-at="2019-08-26T10:55:30Z" name="init" finished-at="2019-08-26T10:55:30Z" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:37Z" name="launchbrowser" finished-at="2019-08-26T06:42:58Z" duration-ms="21722" status="PASS">
+        <test-method is-config="true" signature="beformethod(org.testng.ITestResult)[pri:0, instance:login.com.actitime.demo.LoginPage@223f3642]" started-at="2019-08-26T10:55:30Z" name="beformethod" finished-at="2019-08-26T10:56:02Z" duration-ms="31984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPage.login()[pri:0, instance:login.com.actitime.demo.LoginPage@223f3642] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="login()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:58Z" name="login" finished-at="2019-08-26T06:42:59Z" duration-ms="562" status="PASS">
+        </test-method> <!-- beformethod -->
+        <test-method signature="login()[pri:0, instance:login.com.actitime.demo.LoginPage@223f3642]" started-at="2019-08-26T10:56:02Z" name="login" finished-at="2019-08-26T10:56:04Z" duration-ms="1361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:login.com.actitime.demo.LoginPage@23529fee]" started-at="2019-08-26T06:42:59Z" name="closeApp" finished-at="2019-08-26T06:43:02Z" duration-ms="2595" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:login.com.actitime.demo.LoginPage@223f3642]" started-at="2019-08-26T10:56:06Z" name="closeApp" finished-at="2019-08-26T10:56:07Z" duration-ms="1430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

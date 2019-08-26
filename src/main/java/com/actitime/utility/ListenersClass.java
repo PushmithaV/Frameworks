@@ -3,34 +3,34 @@ package com.actitime.utility;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.actitime.base.BaseClass;
 import com.aventstack.extentreports.Status;
 
 public class ListenersClass extends BaseClass implements ITestListener{
 
 	@Override
-	public void onTestStart(ITestResult result) {
-		
-		
+	public void onTestStart(ITestResult result) {	
+		new Extentreportclass().extentreportload(result.getMethod().getMethodName());
 	}
 
 	@Override
-	public void onTestSuccess(ITestResult result) {		
-		gv.extenttest.log(Status.PASS, gv.testcasename+" is pass");
-		gv.reports.extentflush();
+	public void onTestSuccess(ITestResult result) {	
+		System.out.println("Pass");
+		Extentreportclass.extenttest.log(Status.PASS, gv.testcasename+" is pass");
+		extentreports.flush();
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {	
-		gv.extenttest.log(Status.FAIL, gv.testcasename+" is fail");
-		gv.reports.extentflush();
+		System.out.println("Fail");
+		Extentreportclass.extenttest.log(Status.FAIL, gv.testcasename+" is fail");
+		extentreports.flush();
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {		
-		gv.extenttest.log(Status.SKIP, gv.testcasename+" is skipped");
-		gv.reports.extentflush();
+		Extentreportclass.extenttest.log(Status.SKIP, gv.testcasename+" is skipped");
+		extentreports.flush();
 	}
 
 	@Override

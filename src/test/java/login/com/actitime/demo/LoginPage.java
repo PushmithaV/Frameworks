@@ -11,6 +11,9 @@ public class LoginPage extends Generic_methods{
 public void login()
 {
 	setDatato("username", "admin");
+	setDatato("password", "manager");
+	clickon("loginbtn");
+	System.out.println(gettheTitle());
 	
 }
 

@@ -17,15 +17,18 @@ import org.testng.annotations.BeforeSuite;
 
 import com.actitime.utility.Extentreportclass;
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	public GlobalVariables gv = new GlobalVariables();
 	public String userDir = System.getProperty("user.dir");
-	//public Extentreportclass report= new Extentreportclass();
-	
-	
+	//public Extentreportclass report= new Extentreportclass();	
+	public static ExtentReports extentreports;
+	public static ExtentTest extenttest;
+	public static ExtentHtmlReporter  extenthtmlreporter;
 	
 	public void initProperty() throws FileNotFoundException, IOException {
 		System.out.println(userDir);
@@ -60,9 +63,7 @@ public class BaseClass {
 		}
 		
 		enterurl();
-		gv.reports= new Extentreportclass();
-		gv.testcasename=result.getClass().getSimpleName();
-		gv.reports.extentreportload(gv.testcasename);
+		
 	}
 
 	public void enterurl() {

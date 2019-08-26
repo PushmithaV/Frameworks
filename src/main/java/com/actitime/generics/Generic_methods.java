@@ -65,9 +65,15 @@ public class Generic_methods extends BaseClass{
 		
 	}
 	
-	public String gettheTExt(String element)
+	public String gettheText(String element)
 	{
 		return findwebelement(element).getText();
+		
+	}
+	
+	public String gettheTitle()
+	{
+		return gv.driver.getTitle();
 		
 	}
 	
@@ -86,7 +92,7 @@ public class Generic_methods extends BaseClass{
 	{
 		String s = gv.object.getProperty(element);
 		String[] locator = s.split("-");
-		System.out.println(Arrays.toString(locator));
+		//System.out.println(Arrays.toString(locator));
 	switch(locator[0])
 	{
 	case "id": gv.by=By.id(locator[1]);
