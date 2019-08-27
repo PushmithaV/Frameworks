@@ -1,20 +1,34 @@
 package com.actitime.generics;
 
-import java.util.Arrays;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 
 import com.actitime.base.BaseClass;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class Generic_methods extends BaseClass{	
-		
+	
+	public void switchtowindow(int windownumber)
+	{
+		Set<String> windows = gv.driver.getWindowHandles();
+		List window=new ArrayList(windows);
+		gv.driver.switchTo().window((String) window.get(windownumber-1));
+	}
+	public void screenshotof(String element) throws IOException
+	{
+		File src = findwebelement(element).getScreenshotAs(OutputType.FILE);
+		File dest= new File(userDir+"\\src\\test\\resources"+element+".png");
+		FileUtils.copyFile(src, dest);
+	}
 	public void setDatato(String element,String value)
 	{		
 		findwebelement(element).sendKeys(value);
@@ -90,7 +104,7 @@ public class Generic_methods extends BaseClass{
 		
 	public WebElement findwebelement(String element)
 	{
-		String s = gv.object.getProperty(element);
+		String s = gv.flipkartprop.getProperty(element);
 		String[] locator = s.split("-");
 		//System.out.println(Arrays.toString(locator));
 	switch(locator[0])
@@ -129,7 +143,7 @@ public class Generic_methods extends BaseClass{
 
 	public  List<WebElement> findwebelements(String element)
 	{
-		String[] locator = gv.object.getProperty(element).split("-");
+		String[] locator = gv.flipkartprop.getProperty(element).split("-");
 	
 	switch(locator[0])
 	{
