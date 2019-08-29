@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-27T11:48:02Z" name="Default suite" finished-at="2019-08-27T11:49:03Z" duration-ms="61216">
+  <suite started-at="2019-08-28T05:33:12Z" name="Default suite" finished-at="2019-08-28T05:34:13Z" duration-ms="60534">
     <groups>
     </groups>
-    <test started-at="2019-08-27T11:48:02Z" name="Default test" finished-at="2019-08-27T11:49:03Z" duration-ms="61216">
+    <test started-at="2019-08-28T05:33:12Z" name="Default test" finished-at="2019-08-28T05:34:13Z" duration-ms="60534">
       <class name="com.flipkart.Addtocart">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.flipkart.Addtocart@12d4bf7e]" started-at="2019-08-27T11:48:02Z" name="init" finished-at="2019-08-27T11:48:02Z" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.flipkart.Addtocart@4c1d9d4b]" started-at="2019-08-28T05:33:12Z" name="init" finished-at="2019-08-28T05:33:12Z" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="beformethod(org.testng.ITestResult)[pri:0, instance:com.flipkart.Addtocart@12d4bf7e]" started-at="2019-08-27T11:48:02Z" name="beformethod" finished-at="2019-08-27T11:48:23Z" duration-ms="21113" status="PASS">
+        <test-method is-config="true" signature="beformethod(org.testng.ITestResult)[pri:0, instance:com.flipkart.Addtocart@4c1d9d4b]" started-at="2019-08-28T05:33:12Z" name="beformethod" finished-at="2019-08-28T05:33:35Z" duration-ms="22436" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addtocart status=SUCCESS method=Addtocart.addtocart()[pri:0, instance:com.flipkart.Addtocart@12d4bf7e] output={null}]]]>
+                <![CDATA[[TestResult name=addtocart status=SUCCESS method=Addtocart.addtocart()[pri:0, instance:com.flipkart.Addtocart@4c1d9d4b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beformethod -->
-        <test-method signature="addtocart()[pri:0, instance:com.flipkart.Addtocart@12d4bf7e]" started-at="2019-08-27T11:48:23Z" name="addtocart" finished-at="2019-08-27T11:48:58Z" duration-ms="34635" status="PASS">
+        <test-method signature="addtocart()[pri:0, instance:com.flipkart.Addtocart@4c1d9d4b]" started-at="2019-08-28T05:33:35Z" name="addtocart" finished-at="2019-08-28T05:34:10Z" duration-ms="35223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtocart -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.flipkart.Addtocart@12d4bf7e]" started-at="2019-08-27T11:49:03Z" name="closeApp" finished-at="2019-08-27T11:49:03Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.flipkart.Addtocart@4c1d9d4b]" started-at="2019-08-28T05:34:13Z" name="closeApp" finished-at="2019-08-28T05:34:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

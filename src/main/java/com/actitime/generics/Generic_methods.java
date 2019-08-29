@@ -9,6 +9,7 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
@@ -26,7 +27,18 @@ public class Generic_methods extends BaseClass{
 	public void screenshotof(String element) throws IOException
 	{
 		File src = findwebelement(element).getScreenshotAs(OutputType.FILE);
-		File dest= new File(userDir+"\\src\\test\\resources"+element+".png");
+		File dest= new File(userDir+gv.flipkartprop.getProperty("screenshotpath")+element+".png");
+		FileUtils.copyFile(src, dest);
+	}
+	public void screenshotofScreen(String title) throws IOException
+	{
+		TakesScreenshot image= (TakesScreenshot) gv.driver;
+		File src=image.getScreenshotAs(OutputType.FILE);
+		//String title = gv.driver.getTitle();
+		
+		
+		File dest= new File(userDir+gv.flipkartprop.getProperty("screenshotpath")+title+".png");
+		System.out.println(dest);
 		FileUtils.copyFile(src, dest);
 	}
 	public void setDatato(String element,String value)

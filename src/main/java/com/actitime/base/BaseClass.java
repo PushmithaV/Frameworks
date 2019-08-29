@@ -80,7 +80,7 @@ public class BaseClass {
 	@AfterMethod
 	public void closeApp() {
 		
-		gv.driver.close();
+		//gv.driver.close();
 	}
 
 }

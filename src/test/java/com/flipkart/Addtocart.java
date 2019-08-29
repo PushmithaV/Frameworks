@@ -1,5 +1,6 @@
 package com.flipkart;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Listeners;
@@ -11,17 +12,20 @@ import com.actitime.utility.ListenersClass;
 public class Addtocart extends Generic_methods {
 	
 	@Test
-	public void addtocart()
+	public void addtocart() throws IOException
 	{
 		gv.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		clickon("closebtn");
+		screenshotofScreen(gettheTitle());
 		setDatato("search", "Fiction books");
 		clickon("searchbtn");
-		clickon("book");
+		clickon("book");		
 		switchtowindow(2);
-		clickon("addtocart");
-		
+		clickon("addtocart");		
+		screenshotof("placeorder");
 		clickon("placeorder");
+		
+		
 		
 	}
 

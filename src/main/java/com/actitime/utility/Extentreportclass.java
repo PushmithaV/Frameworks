@@ -11,7 +11,7 @@ public class Extentreportclass extends BaseClass{
 
 	public  void extentreportload(String testname)
 	{
-		extenthtmlreporter=new ExtentHtmlReporter(userDir+"\\src\\test\\resources\\"+testname+".html");
+	extenthtmlreporter=new ExtentHtmlReporter(userDir+"\\src\\test\\resources\\"+testname+".html");
 	extentreports= new ExtentReports();
 	extenttest=extentreports.createTest(testname);	
 	extentreports.attachReporter(extenthtmlreporter);
